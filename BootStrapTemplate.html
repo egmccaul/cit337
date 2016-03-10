@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CIT337 - Software Development Project</title>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+        
+        <!-- Adds some css to the elements in the page -->
+        <style type="text/css">
+        
+            /*Centers the header text, and makes bold.*/
+            .col-sm-12 h1{
+                text-align: center;
+                font-weight: 600;
+            }
+            
+            /*Bolds the text within the content area of the page, as well
+            as centers the heading for the form area.*/
+            .col-sm-8 p{
+                font-weight: bold;
+                text-align: center;
+            }
+            
+            /*Changes the the text next to the receive newsletter checkbox
+            back to non-bold text.*/
+            #newsletter{
+                font-weight: normal;
+            }
+            
+            /*Creates some white space on each side of the login dropdown form*/
+            #login{
+                padding: 10px 15px 0px 15px;
+            }
+            
+            /*Adjusts the the size of the caption in each picture, as well as how close
+            the caption is to the carousel navigation bar.*/
+            .carousel-caption p{
+                font-size: 100%;
+                margin-bottom: 0px;
+            }
+            
+            /*Adjust the font size, and makes the text italic within the footer.*/
+            footer{
+                font-size: 75%;
+                font-style: italic;
+            }
+        </style>
+    
+    </head>
+    
+    <body>
+        
+        <!--Creates the navbar and style it to appear dark grey with light grey text.
+        This also makes the nav bar stay at the top of the page with a login, and 
+        signup button on the right-hand side.-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">CIT-337</a>
+                </div>
+                
+                <!--Adds the standard buttons on the page.-->
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                    
+                    <!--Places the signup button on the right-hand side of the navbar,
+                    as well as the login dropdown-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login</a>
+                            <div class="dropdown-menu">
+                                <form id="login">
+                                    <div class="form-group">
+                                        <input type="text" name="username" class="form-control" placeholder="Username">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-primary">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li>
+                            <form class="navbar-form">
+                                <a href="#signup" class="btn btn-primary active">Sign Up</a>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <!-- Holds the footer/copyright information of the page. -->
+            <div class="col-sm-12">
+                <footer>
+                    <p>&copy; 2016</p>
+                </footer>
+            </div>
+        </div>
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+    </body>
+</html>
